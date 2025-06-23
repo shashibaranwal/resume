@@ -59,7 +59,7 @@ nav {
 .profile__name--subtitle {
   height: 33px;
   font-size: 24.24px;
-  font-weight: medium;
+  font-weight: 500;
   line-height: 32.3px;
   letter-spacing: 1%;
 }
@@ -78,7 +78,7 @@ nav {
 .profile__quote--text {
   height: 49px;
   gap: 4.04px;
-  font-size: 18.18;
+  font-size: 18.18px;
   letter-spacing: 2%;
   line-height: 24.2px;
 }
@@ -114,8 +114,8 @@ nav {
   gap: 16.16px;
 }
 
-.profile__contact__details-text, .profile__social__title, .profile__language {
-  font-family: DM Sans;
+.profile__contact__details-text, .profile__social__title, .profile__language__title {
+  font-family: "DM Sans";
   font-size: 12.12px;
   letter-spacing: 1%;
   line-height: 16.2px;
@@ -123,8 +123,8 @@ nav {
 }
 
 .profile__contact__details-address {
-  font-family: DM Sans;
-  font-weight: medium;
+  font-family: "DM Sans";
+  font-weight: 500;
   font-size: 14.14px;
   letter-spacing: 0%;
   line-height: 18.2px;
@@ -156,7 +156,7 @@ nav {
 .skills__container {
   width: 763.64px;
   height: 1617.02px;
-  width: 0 auto;
+  margin: 0 auto;
 }
 
 .skills__container__projects, .skills__container__experience {
@@ -219,16 +219,14 @@ nav {
 }
 
 .bullet__point--line {
-  color: #E2E6EE;
   width: 1.01px;
   height: 100vh;
-  opacity: 20%;
+  opacity: 0.2;
   border: 1px solid rgb(103, 103, 103);
   filter: drop-shadow(10px 14px 14px rgba(0, 0, 0, 0.5));
 }
 
 .bullet__point--experience--line {
-  color: #F7F9FC;
   border: 1px solid #F7F9FC;
   height: 59.46px;
 }
@@ -239,7 +237,7 @@ nav {
 }
 
 .skills__container--title {
-  font-family: "outfit";
+  font-family: "Outfit";
   font-weight: 500;
   color: #2E2E48;
   font-size: 24.24px;
@@ -312,16 +310,6 @@ nav {
   height: 83.71px;
   padding-top: 6.06px;
   margin-bottom: 16.16px;
-}
-
-.experience--list--items--details {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  gap: 8.08px;
-  width: 242.42px;
-  height: 61.48px;
 }
 
 .experience--list--items--details {
@@ -410,10 +398,9 @@ nav {
 .experience--list--items--para--text {
   color: #79819A;
   font-family: "DM Sans";
-  font-variant: normal;
   font-size: 10.1px;
   letter-spacing: 1%;
-  line-height: auto;
+  line-height: 14px;
   height: 52px;
   width: 408.08px;
   text-align: left;
@@ -444,7 +431,6 @@ nav {
 .education__course--items--details--title {
   font-family: "DM Sans";
   font-size: 12.12px;
-  font-variant: medium;
   font-weight: 400;
   line-height: 16.2px;
   letter-spacing: 0%;
@@ -465,7 +451,7 @@ nav {
   color: #2E2E48;
   font-family: "DM Sans";
   font-size: 14.14px;
-  font-variant: medium;
+  font-weight: 500;
   line-height: 18.2px;
   letter-spacing: 0%;
   height: 19px;
@@ -475,7 +461,7 @@ nav {
   font-family: "DM Sans";
   font-size: 10.1px;
   letter-spacing: 1%;
-  line-height: auto;
+  line-height: 12px;
   color: #79819A;
 }
 
@@ -512,7 +498,6 @@ nav {
 .skills__container__design--header--title, .skills__container__development--header--title {
   font-family: "DM Sans";
   font-weight: 500;
-  font-variant: medium;
   font-size: 14.14px;
   letter-spacing: 0%;
   line-height: 18.2px;
@@ -636,6 +621,9 @@ nav {
   gap: 8.08px;
   justify-content: center;
   align-items: center;
+  font-family: "DM Sans";
+  font-size: 12.12px;
+  color: #2E2E48;
 }
 
 .skills__container__height {
@@ -680,7 +668,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.02;
+  gap: 2.02px;
   width: 109px;
   height: 34.02px;
 }
@@ -703,9 +691,118 @@ nav {
   width: 109px;
   height: 13px;
   font-family: "DM Sans";
-  font-variant: "regular";
   font-size: 10.1px;
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  nav {
+    height: auto;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f9f9fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav__details--width {
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+  }
+  .profile__image {
+    margin-bottom: 20px;
+  }
+  .profile__image .profile__image--img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .profile__details {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .profile__name {
+    height: auto;
+    gap: 10px;
+  }
+  .profile__name--title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .profile__name--subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .gradient__text {
+    background-image: linear-gradient(90deg, #A478E8 0%, #516CF7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .profile__quote {
+    height: auto;
+    text-align: center;
+    gap: 5px;
+  }
+  .profile__quote--text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .profile__quote--author {
+    font-size: 12px;
+    padding-left: 0;
+    color: #898ea4;
+  }
+  .nav__details--divider {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .profile__contact, .profile__social, .profile__language {
+    align-items: center;
+    gap: 15px;
+  }
+  .profile__contact__details {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .profile__contact__details-text,
+  .profile__social__title,
+  .profile__language__title {
+    font-size: 12px;
+  }
+  .profile__contact__details-address {
+    font-size: 14px;
+  }
+  .profile__contact__details-address a {
+    color: #47516B;
+  }
+  .profile__social__title {
+    margin-bottom: 10px;
+  }
+  .profile__contact__details img,
+  .profile__social__title + .profile__contact__details img {
+    display: none;
+  }
+  .profile__language {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile__contact__details,
+  .profile__social .profile__contact__details,
+  .profile__language .profile__contact__details {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .profile__language .profile__contact__details img {
+    width: 24px;
+    height: 24px;
+  }
+  .profile__language .profile__contact__details-text {
+    margin-left: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
